@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{06AA2B4F-F2D6-459A-A127-2673F8A61C3B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LernQuiz</RootNamespace>
+    <AssemblyName>LernQuiz</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Src\ICanLogErrors.cs" />
+    <Compile Include="Src\QuizMain.cs" />
+    <Compile Include="Src\Db\IEstablishQuestionnaires.cs" />
+    <Compile Include="Src\Db\InlandMotorFactory.cs">
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </Compile>
+    <Compile Include="Src\View\QuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Db\Answer.cs" />
+    <Compile Include="Src\Db\Question.cs" />
+    <Compile Include="Src\Db\Questionnaire.cs" />
+    <Compile Include="Src\Controller\BasicController.cs" />
+    <Compile Include="Src\LogErrorsInFile.cs" />
+    <Compile Include="Src\View\Panels\BasicPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Src\View\Panels\ConfigurationPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Src\View\Panels\EvaluationPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Src\View\Panels\QuestionnairePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Src\View\Panels\StartPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Src\Model\BasicModel.cs" />
+    <Compile Include="Src\Model\ConfigurationModel.cs" />
+    <Compile Include="Src\Model\EvaluationModel.cs" />
+    <Compile Include="Src\Model\QuestionnaireModel.cs" />
+    <Compile Include="Src\Model\StartModel.cs" />
+    <Compile Include="Src\Controller\StartController.cs" />
+    <Compile Include="Src\Settings.cs" />
+    <Compile Include="Src\View\FormElementFactory.cs" />
+    <Compile Include="Src\DictionaryIO.cs" />
+    <Compile Include="Src\History.cs" />
+    <Compile Include="Src\Controller\ConfigurationController.cs" />
+    <Compile Include="Src\Controller\EvaluationController.cs" />
+    <Compile Include="Src\Controller\QuestionnaireController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ApplicationImages\DeveloperABC.png" />
+    <EmbeddedResource Include="Resources\ApplicationImages\SegelschuleOSZIMT.png" />
+    <EmbeddedResource Include="Resources\QuestionsImages\107.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\108.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\110.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\111.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\112.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\113.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\114.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\115.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\116.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\120.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\121.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\122.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\123.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\124.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\125.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\127.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\129.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\131.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\132.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\145.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\146.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\147.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\148.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\149.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\150.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\151.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\152.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\153.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\154.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\155.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\157.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\17.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\18.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\180.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\183.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\185.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\186.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\188.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\189.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\19.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\192.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\193.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\196.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\198.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\199.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\20.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\201.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\202.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\204.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\21.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\22.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\23.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\24.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\243.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\244.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\25.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\26.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\27.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\28.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\29.gif" />
+    <EmbeddedResource Include="Resources\QuestionsImages\30.gif" />
+  </ItemGroup>
+</Project>

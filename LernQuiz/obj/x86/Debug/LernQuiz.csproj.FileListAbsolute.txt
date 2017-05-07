@@ -1,0 +1,6 @@
+C:\Users\Backel\Desktop\OSZImt_Quiz-master\OSZImt_Quiz-master\LernQuiz\bin\Debug\LernQuiz.exe
+C:\Users\Backel\Desktop\OSZImt_Quiz-master\OSZImt_Quiz-master\LernQuiz\bin\Debug\LernQuiz.pdb
+C:\Users\Backel\Desktop\OSZImt_Quiz-master\OSZImt_Quiz-master\LernQuiz\bin\Debug\MySql.Data.dll
+C:\Users\Backel\Desktop\OSZImt_Quiz-master\OSZImt_Quiz-master\LernQuiz\obj\x86\Debug\LernQuiz.csprojResolveAssemblyReference.cache
+C:\Users\Backel\Desktop\OSZImt_Quiz-master\OSZImt_Quiz-master\LernQuiz\obj\x86\Debug\LernQuiz.exe
+C:\Users\Backel\Desktop\OSZImt_Quiz-master\OSZImt_Quiz-master\LernQuiz\obj\x86\Debug\LernQuiz.pdb
