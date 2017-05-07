@@ -42,11 +42,11 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Klassendiagramm erstellt, Projektrollen verteilt, Dokumentation und Protokollierung begonnen |
+**tasks**: Klassendiagramm erstellt, Klassendiagramm überarbeitet, Projektrollen verteilt, Dokumentation und Protokollierung begonnen |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
-**tasks**: Klassendiagramm erstellt, Projektrollen verteilt, Dokumentation und Protokollierung begonnen |
+**tasks**: Klassendiagramm erstellt, Klassendiagramm überarbeitet, Projektrollen verteilt, Dokumentation und Protokollierung begonnen |
 
 ---  
 
@@ -67,7 +67,7 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Aufgabenpackete festgelegt, Versionskontrolle eingerichtet, Kanban-Board für Projekt erstellt, Dokumentation und Protokollierung fortgesetzt |
+**tasks**: Aufgabenpackete festgelegt, Versionskontrolle eingerichtet, Projekt angelegt, Kanban-Board für Projekt erstellt, Dokumentation und Protokollierung fortgesetzt |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
@@ -151,7 +151,7 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Implementierung begonnen, Überarbeiten der Forms, Datenbank neu anlegen wegen weil Fehler, Datenbankanbindung Implementieren, Forms miteinander verbinden, Datenbankabfragen erstellen  |
+**tasks**: Projektstrucktur erstellt, Implementierung begonnen, Überarbeiten der Forms, Datenbank neu anlegen wegen weil Fehler, Datenbankanbindung Implementieren, Forms miteinander verbinden, Datenbankabfragen erstellen, Implementierung der Startseite, Implementierung der Configurationsseite, Implementierung der Fragenseite  |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
