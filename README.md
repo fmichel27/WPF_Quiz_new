@@ -24,13 +24,13 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 # Ergebnisprotokolle
 
-## Protokoll 1 - 06.02.2017 - 06.02.2017
+## Protokoll 1 - 06.02.2017
 
 **Protokollnummer:** | 1
 --- | ---
 **Klassenbezeichnung:** | FA53
 **Gruppenname (Zahl):** | 9
-**Datum:** | 06.02.2017 - 06.02.2017
+**Datum:** | 06.02.2017
 
 **AS-Blöcke:**  
 - [x] 06.02.2017  
@@ -42,96 +42,127 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Klassendiagramm erstellt, Versionskontrolle eingerichtet, Projektrollen verteilt, Aufgabenpackete festgelegt, Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung begonnen |
+**tasks**: Klassendiagramm erstellt, Projektrollen verteilt, Dokumentation und Protokollierung begonnen |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
-**tasks**: Klassendiagramm erstellt, Versionskontrolle eingerichtet, Projektrollen verteilt, Aufgabenpackete festgelegt, Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung begonnen |
+**tasks**: Klassendiagramm erstellt, Projektrollen verteilt, Dokumentation und Protokollierung begonnen |
 
 ---  
 
-## Protokoll 2 - 16.02.2017 - 17.02.2017
+## Protokoll 2 - 27.02.2017
 
 **Protokollnummer:** | 2
 --- | ---
 **Klassenbezeichnung:** | FA53
 **Gruppenname (Zahl):** | 9
-**Datum:** | 16.02.2017 - 17.02.2017
+**Datum:** | 27.02.2017
 
 **AS-Blöcke:**   
-- [x] 16.02.2017  
-- [x] 17.02.2017  
+- [x] 27.02.2017   
 
 **Diese Woche erledigte Aufgaben des Frontend-Entwicklers:** |
 ---|
-**tasks**: Aufgabenpackete festgelegt, Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung fortgesetzt |
+**tasks**: Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung fortgesetzt |
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Aufgabenpackete festgelegt, Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung fortgesetzt |
+**tasks**: Aufgabenpackete festgelegt, Versionskontrolle eingerichtet, Kanban-Board für Projekt erstellt, Dokumentation und Protokollierung fortgesetzt |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
-**tasks**: Aufgabenpackete festgelegt, Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung fortgesetzt |
+**tasks**: Informationen zum Themengebiet gesammelt, Dokumentation und Protokollierung fortgesetzt |
 
 ---  
 
-## Protokoll 3 - 06.03.2017 - 07.03.2017
+## Protokoll 3 - 27.02.2017
 
 **Protokollnummer:** | 3
 --- | ---
 **Klassenbezeichnung:** | FA53
 **Gruppenname (Zahl):** | 9
-**Datum:** | 06.03.2017 - 07.03.2017
+**Datum:** | 27.02.2017
 
-**AS-Blöcke:**  
-- [x] 06.03.2017  
-- [x] 07.03.2017   
+**AS-Blöcke:**   
+- [x] 27.02.2017    
 
 **Diese Woche erledigte Aufgaben des Frontend-Entwicklers:** |
 ---|
-**tasks**: Implementierung begonnen, View zur Ausgabe der Testklassen erstellt |
+**tasks**:  Informationen zum Themengebiet gesammelt |
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Simple Quiz Auswertung, Zwei Fragen gemockt, um Solve() und Evaluate() zu testen |
+**tasks**:  Informationen zum Themengebiet gesammelt |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
-**tasks**: Krankgeschrieben |
+**tasks**:  Informationen zum Themengebiet gesammelt |
 
 
 ---  
 
-## Protokoll 4 - 09.03.2017 - 10.03.2017
+## Protokoll 4 - 27.02.2017
 
 **Protokollnummer:** | 4
 --- | ---
 **Klassenbezeichnung:** | FA53
 **Gruppenname (Zahl):** | 9
-**Datum:** | 09.03.2017 - 10.03.2017
+**Datum:** | 27.02.2017
 
 **AS-Blöcke:**  
-- [x] 09.03.2017  
-- [x] 10.03.2017  
+- [x] 27.02.2017   
 
 **Diese Woche erledigte Aufgaben des Frontend-Entwicklers:** |
 ---|
-**tasks**: Ausgabe der Testdaten im View, gitignore zur Vermeidung von Mergekonflikten angelegt, gitconfig für Aliase angelegt, Änderung der Protokolle von Wöchentlich auf alle 2 Tage |
+**tasks**: Informationen zum Themengebiet gesammelt |
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: |
+**tasks**: Informationen zum Themengebiet gesammelt |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
-**tasks**: Embedded Datenbank angelegt |
+**tasks**: Informationen zum Themengebiet gesammelt |
+
+---  
+
+## Protokoll 5 - 27.02.2017 - 21.03.2017
+
+**Protokollnummer:** | 5
+--- | ---
+**Klassenbezeichnung:** | FA53
+**Gruppenname (Zahl):** | 9
+**Datum:** | 27.02.2017 - 21.03.2017
+
+**AS-Blöcke:**  
+- [x] 27.02.2017  
+- [x] 28.02.2017
+- [x] 28.02.2017
+- [x] 20.03.2017
+- [x] 20.03.2017
+- [x] 20.03.2017
+- [x] 20.03.2017
+- [x] 21.03.2017
+- [x] 21.03.2017
+
+**Diese Woche erledigte Aufgaben des Frontend-Entwicklers:** |
+---|
+**tasks**: Implementierung begonnen, Anlegen der Forms, Suche nach der Möglichkeit den Close Button anzusprechen |
+
+**Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
+---|
+**tasks**: Implementierung begonnen, Überarbeiten der Forms, Datenbank neu anlegen wegen weil Fehler, Datenbankanbindung Implementieren, Forms miteinander verbinden, Datenbankabfragen erstellen  |
+
+**Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
+---|
+**tasks**: Anlegen der Datenbank, Installieren von NUnit und anlegen von Testklassen |
+
 
 ---  
 
 ## Protokoll 5 - 21.03.2017
 
-**Protokollnummer:** | 5
+**Protokollnummer:** | 6
 --- | ---
 **Klassenbezeichnung:** | FA53
 **Gruppenname (Zahl):** | 9
@@ -142,15 +173,15 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 **Diese Woche erledigte Aufgaben des Frontend-Entwicklers:** |
 ---|
-**tasks**: Suche nach der Möglichkeit den Clone Button anzusprechen|
+**tasks**: Dokumentation und Protokollierung fortgesetzt |
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
-**tasks**: Krankgeschrieben|
+**tasks**: Dokumentation und Protokollierung fortgesetzt, bisherige Dokumentation überarbeiten |
 
 **Diese Woche erledigte Aufgaben des Datenbankspezialisten:** |
 ---|
-**tasks**: Installieren von NUnit und anlegen von Testklassen|
+**tasks**: Dokumentation und Protokollierung fortgesetzt |
 
 
----  
+--- 
