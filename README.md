@@ -24,22 +24,21 @@ Eine Musterlösung des Diagramms ist [hier](/uml/KlassendiagrammQuiz.png)
 
 # Ergebnisprotokolle
 
-## Protokoll 1 - 13.02.2017 - 15.02.2017
+## Protokoll 1 - 06.02.2017 - 06.02.2017
 
 **Protokollnummer:** | 1
 --- | ---
 **Klassenbezeichnung:** | FA53
 **Gruppenname (Zahl):** | 9
-**Datum:** | 13.02.2017 - 15.02.2017
+**Datum:** | 06.02.2017 - 06.02.2017
 
 **AS-Blöcke:**  
-- [x] 13.02.2017  
-- [x] 14.02.2017  
-- [x] 15.02.2017   
+- [x] 06.02.2017  
+- [x] 06.02.2017    
 
 **Diese Woche erledigte Aufgaben des Frontend-Entwicklers:** |
 ---|
-**tasks**: Klassendiagramm erstellt, Klassendiagramm überarbeitet, Versionskontrolle eingerichtet, Git-Workflow festgelegt, Kanban-Board für Projekt erstellt, Projektrollen verteilt, Dokumentation und Protokollierung begonnen|
+**tasks**: Klassendiagramm erstellt, Klassendiagramm überarbeitet, Projektrollen verteilt, Dokumentation und Protokollierung begonnen|
 
 **Diese Woche erledigte Aufgaben des Backend-Entwicklers:** |
 ---|
