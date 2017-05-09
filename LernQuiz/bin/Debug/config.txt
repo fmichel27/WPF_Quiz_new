@@ -1,2 +1,0 @@
-programname=Sportbootführerschein Binnen
-passedquizwith=95
