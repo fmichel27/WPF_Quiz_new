@@ -3,7 +3,7 @@ using System.Data;
 using System.Collections.Generic;
 
 using LernQuiz.Db;
-
+using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
 
@@ -11,9 +11,10 @@ namespace LernQuiz.Db
 {
 	public class InlandMotorFactory : IEstablishQuestionnaires
 	{
-		private String  ConnectionString = "Server=carlaischmann.de;" + "Database=Binnenschifffahrt;" + "User ID=smoky;" + "Password=fghk32937fdg!2;" + "Pooling=false";
+        //private String ConnectionString =   "Server =local;" + "Database=test;"+"Integrated Security = sspi";
+        private String  ConnectionString = "Server=carlaischmann.de;" + "Database=Binnenschifffahrt;" + "User ID=smoky;" + "Password=fghk32937fdg!2;" + "Pooling=false";
 
-		public InlandMotorFactory ()
+        public InlandMotorFactory ()
 		{
 		}
 
@@ -74,12 +75,19 @@ namespace LernQuiz.Db
 		}
 
 		private IDbCommand query(String sqlCommand) {
-			IDbConnection dbcon;
-			dbcon = new MySqlConnection(ConnectionString);
-			dbcon.Open();
+            IDbConnection dbcon;
+            dbcon = new MySqlConnection(ConnectionString);
+            dbcon.Open();
 
-			IDbCommand dbcmd = dbcon.CreateCommand();
-			dbcmd.CommandText = sqlCommand;
+            IDbCommand dbcmd = dbcon.CreateCommand();
+
+           // SqlConnection con;
+            //con = new SqlConnection(ConnectionString);
+            //con.Open();
+
+            //IDbCommand dbcmd = con.CreateCommand();
+
+            dbcmd.CommandText = sqlCommand;
 
 			return dbcmd;
 		}
