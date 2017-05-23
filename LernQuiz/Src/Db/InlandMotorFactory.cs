@@ -11,8 +11,8 @@ namespace LernQuiz.Db
 {
 	public class InlandMotorFactory : IEstablishQuestionnaires
 	{
-        string connectionString = "server=localhost;database=Binnenschifffahrt;Trusted_Connection=True;";       
-        //private String  ConnectionString = "Server=carlaischmann.de;" + "Database=Binnenschifffahrt;" + "User ID=smoky;" + "Password=fghk32937fdg!2;" + "Pooling=false";
+        //string connectionString = "server=localhost;database=Binnenschifffahrt;Trusted_Connection=True;";
+        private String connectionString = "Server=sql11.freesqldatabase.com;" + "Database=sql11176858;" + "User ID=sql11176858;" + "Password=5wZN8jCfgR;";
 
         public InlandMotorFactory ()
 		{
