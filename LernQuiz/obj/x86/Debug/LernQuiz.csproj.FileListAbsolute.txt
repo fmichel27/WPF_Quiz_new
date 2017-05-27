@@ -1,0 +1,8 @@
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\LernQuiz.exe
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\LernQuiz.pdb
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\MySql.Data.dll
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.csprojResolveAssemblyReference.cache
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.exe
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.pdb
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\Binnenschifffahrt.mdf
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\Binnenschifffahrt_log.ldf

@@ -1,0 +1,2 @@
+programname=Sportbootführerschein Binnen (unter Antriebsmaschine)
+passedquizwith=95
