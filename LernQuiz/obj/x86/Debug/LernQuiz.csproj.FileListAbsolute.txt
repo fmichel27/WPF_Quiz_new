@@ -4,8 +4,6 @@ C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\MySql.Data.dll
 C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.csprojResolveAssemblyReference.cache
 C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.exe
 C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.pdb
-C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\Binnenschifffahrt.mdf
-C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\Binnenschifffahrt_log.ldf
 C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.exe
 C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\obj\x86\Debug\LernQuiz.pdb
 C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\bin\Debug\LernQuiz.exe
@@ -15,3 +13,6 @@ C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\obj\x86\Debug\Le
 C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\bin\Debug\Binnen.mdf
 C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\bin\Debug\Binnen_log.ldf
 C:\Users\user\Desktop\WPF_Quiz_new-master\WPF_Quiz_new\LernQuiz\bin\Debug\LernQuiz.exe.config
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\Binnen.mdf
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\Binnen_log.ldf
+C:\Users\Backel\Desktop\WPF_Quiz_new\LernQuiz\bin\Debug\LernQuiz.exe.config
