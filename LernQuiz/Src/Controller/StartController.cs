@@ -9,16 +9,16 @@ namespace LernQuiz
 {
 	public class StartController : BasicController
 	{
-		public StartController (QuizForm QForm, String[] Params) : base (QForm, Params)
+		public StartController (QuizForm qForm, String[] parames) : base (qForm, parames)
 		{
 		}
 
 		public void SetConfigurationPanel() {
-			//SetPanel("configuration");
+			//setPanel("configuration");
 		}
 
-		protected override void InitModel(String[] Params) {
-			BModel = new StartModel();
+		protected override void InitModel(String[] parames) {
+			bModel = new StartModel();
 		}
 	}
 }

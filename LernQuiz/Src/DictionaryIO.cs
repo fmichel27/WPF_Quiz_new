@@ -6,23 +6,23 @@ namespace LernQuiz
 {
 	public abstract class DictionaryIO
 	{
-		protected String FileName;
+		protected String fileName;
 		protected Dictionary<string,string> dictionary;
 
-		public DictionaryIO (String FileName)
+		public DictionaryIO (String fileName)
 		{
-			this.FileName = FileName;
+			this.fileName = fileName;
 		}
 
 		protected bool LoadFromFile() {
 			dictionary = new Dictionary<string, string>();
 
 			try {
-				if (!File.Exists(FileName)) {
+				if (!File.Exists(fileName)) {
 					return false;
 				}
 
-				StreamReader textReader = System.IO.File.OpenText(FileName);
+				StreamReader textReader = System.IO.File.OpenText(fileName);
 				string line;
 				while ((line = textReader.ReadLine()) != null)
 				{
@@ -45,7 +45,7 @@ namespace LernQuiz
 
 		protected void SaveToFile() {
 			try {
-				StreamWriter textWriter = new StreamWriter(FileName, false);
+				StreamWriter textWriter = new StreamWriter(fileName, false);
 				foreach (String key in dictionary.Keys) {
 					textWriter.WriteLine(key + "=" + dictionary[key]); 
 				}

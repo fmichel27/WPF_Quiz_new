@@ -8,20 +8,20 @@ namespace LernQuiz.Model
 		List<String[]> wrongResults;
 		bool passed;
 
-		public String PanelLabel = "Auswertung";
-		public String SuccessText = "Herzlichen Glückwunsch, Sie haben bestanden!";
-		public String FailText = "Leider haben Sie nicht bestanden :(";
-		public String ListWrongAnswers = "Falsch beantwortete Fragen:";
-		public String BackToStartButton = "Zurück zum Hauptprogramm";
+		public String panelLabel = "Auswertung";
+		public String successText = "Herzlichen Glückwunsch, Sie haben bestanden!";
+		public String failText = "Leider haben Sie nicht bestanden :(";
+		public String listWrongAnswers = "Falsch beantwortete Fragen:";
+		public String backToStartButton = "Zurück zum Hauptprogramm";
 
 		public EvaluationModel (List<String[]> wrongResults, bool passed) {
 			this.wrongResults = wrongResults;
 			this.passed = passed;
 		}
 
-		public List<String> getQuestionsOfWrongAnswers() {
+		public List<String> GetQuestionsOfWrongAnswers() {
 			List<String> wrongAnsweredQuestions = new List<String> ();
-			wrongAnsweredQuestions.Add (ListWrongAnswers);
+			wrongAnsweredQuestions.Add (listWrongAnswers);
 
 			foreach(String[] wrongAnsweredQuestion in wrongResults) {
 				wrongAnsweredQuestions.Add(wrongAnsweredQuestion[0]);
@@ -30,24 +30,24 @@ namespace LernQuiz.Model
 			return wrongAnsweredQuestions;
 		}
 
-		public String getWrongAnswer(int index) {
+		public String GetWrongAnswer(int index) {
 			return wrongResults [index] [1];
 		}
 
-		public String getRightAnswer(int index) {
+		public String GetRightAnswer(int index) {
 			return wrongResults [index] [2];
 		}
 
-		public String getEvaluationText() {
+		public String GetEvaluationText() {
 			return (30 - wrongResults.Count) + "/30 Fragen richtig beantwortet";
 		}
 
-		public String getResultText() {
+		public String GetResultText() {
 			if (passed) {
-				return SuccessText;
+				return successText;
 			}
 
-			return FailText;
+			return failText;
 		}
 	}
 }

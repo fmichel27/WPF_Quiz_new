@@ -5,11 +5,11 @@ namespace LernQuiz.Db
 {
     public class Questionnaire
     {
-		public List<Question> Questions { get; set;}
+		public List<Question> questions { get; set;}
 
-        public Questionnaire(List<Question> Questions)
+        public Questionnaire(List<Question> questions)
         {
-            this.Questions = Questions;
+            this.questions = questions;
         }
     }
 }

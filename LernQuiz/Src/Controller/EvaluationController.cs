@@ -16,36 +16,36 @@ namespace LernQuiz
 		bool passed;
 		String questionnaireIndex;
 
-		public EvaluationController (QuizForm QForm, String[] Params) : base (QForm, Params)
+		public EvaluationController (QuizForm qForm, String[] parames) : base (qForm, parames)
 		{
 			SaveToHistory ();
 		}
 
-		protected override void InitModel(String[] Params) {
-			Evaluate (Params);
+		protected override void InitModel(String[] parames) {
+			Evaluate (parames);
 			Console.WriteLine ("Wrong" + wrongResults.Count);
-			BModel = new EvaluationModel(wrongResults, passed);
+			bModel = new EvaluationModel(wrongResults, passed);
 		}
 
-		private void Evaluate(String[] Params) {
+		private void Evaluate(String[] parames) {
 			Settings settings = new Settings ();
-			questionnaireIndex = Params [30];
+			questionnaireIndex = parames [30];
 			int PercentToPass =  int.Parse(settings.GetValue(settings.PERCENT_TO_PASS));
-			Question[] questions = new InlandMotorFactory ().GetFragebogen (questionnaireIndex).Questions.ToArray();
+			Question[] questions = new InlandMotorFactory ().GetFragebogen (questionnaireIndex).questions.ToArray();
 
 			for(int i = 0; i < questions.Length; i++) {
-				if (!questions [i].Answers[int.Parse(Params [i]) - 1].RightAnswer ) {
-					String CorrectAnswer = "";
-					foreach (Answer possibleAnswer in questions[i].Answers) {
-						if (possibleAnswer.RightAnswer) {
-							CorrectAnswer = possibleAnswer.AnswerText;
+				if (!questions [i].answers[int.Parse(parames [i]) - 1].rightAnswer ) {
+					String correctAnswer = "";
+					foreach (Answer possibleAnswer in questions[i].answers) {
+						if (possibleAnswer.rightAnswer) {
+							correctAnswer = possibleAnswer.answerText;
 							break;
 						}
 					}
 					wrongResults.Add (new String[] {
-						questions [i].QuestionText,
-						questions [i].Answers [int.Parse (Params [i]) -1 ].AnswerText, 
-						CorrectAnswer
+						questions [i].questionText,
+						questions [i].answers [int.Parse (parames [i]) -1 ].answerText, 
+						correctAnswer
 					});
 				}
 			}

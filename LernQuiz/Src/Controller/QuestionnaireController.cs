@@ -13,16 +13,16 @@ namespace LernQuiz
 {
 	public class QuestionnaireController : BasicController
 	{
-		private String QuestionnaireIndex;
+		private String questionnaireIndex;
 
-		public QuestionnaireController (QuizForm QForm, String[] Params) : base (QForm, Params)
+		public QuestionnaireController (QuizForm qForm, String[] parames) : base (qForm, parames)
 		{
-			this.QuestionnaireIndex = QuestionnaireIndex;
+			this.questionnaireIndex = questionnaireIndex;
 		}
 
-		protected override void InitModel(String[] Params) {
-			string Index = Params [0];
-			BModel = new QuestionnaireModel (Index);
+		protected override void InitModel(String[] parames) {
+			string index = parames [0];
+			bModel = new QuestionnaireModel (index);
 		}
 	}
 }

@@ -6,21 +6,19 @@ namespace LernQuiz.Db
 {
     public class Question
     {
-		public int QuestionNumber { get;set;}
-		public string QuestionText { get;set;}
-		public string Picture { get;set;}
-		public List<Answer> Answers { get;set;}
+		public int questionNumber { get;set;}
+		public string questionText { get;set;}
+		public string picture { get;set;}
+		public List<Answer> answers { get;set;}
 
-        public Question(int QuestionNumber, String QuestionText, List<Answer> Answers)
+        public Question(int questionNumber, String questionText, List<Answer> answers)
         {
-            this.QuestionNumber = QuestionNumber;
+            this.questionNumber = questionNumber;
            
-            string replacement = "";
             Regex rgx = new Regex("\\{.*\\}");
-            string result = rgx.Replace(QuestionText, replacement);
-            this.QuestionText = result;
-            this.Answers = Answers;
-			this.Picture = "QuestionsImages." + QuestionNumber + ".gif";
+            this.questionText = rgx.Replace(questionText, "");
+            this.answers = answers;
+			this.picture = "QuestionsImages." + questionNumber + ".gif";
         }
     }
 }

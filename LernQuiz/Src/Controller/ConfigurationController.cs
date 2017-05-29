@@ -10,19 +10,19 @@ namespace LernQuiz
 {
 	public class ConfigurationController : BasicController
 	{
-		public ConfigurationController (QuizForm QForm, String[] Params) : base (QForm, Params)
+		public ConfigurationController (QuizForm qForm, String[] parames) : base (qForm, parames)
 		{
 		}
 
-		protected override void InitModel(String[] Params) {
-			BModel = new ConfigurationModel();
+		protected override void InitModel(String[] parames) {
+			bModel = new ConfigurationModel();
 		}
 
 		public void deleteHistory() {
 			new History().delete();
 		}
 
-		public bool saveConfig(String ProgramName, String percentToPass) {
+		public bool saveConfig(String programName, String percentToPass) {
 			try{
 				int percentToPassInt = int.Parse(percentToPass);
 				if (percentToPassInt > 100 || percentToPassInt < 0) {
@@ -35,7 +35,7 @@ namespace LernQuiz
 			} 
 
 			Settings settings = new Settings ();
-			settings.SetValue (settings.PROGRAM_NAME, ProgramName);
+			settings.SetValue (settings.PROGRAM_NAME, programName);
 			settings.SetValue (settings.PERCENT_TO_PASS, percentToPass);
 
 			return true;

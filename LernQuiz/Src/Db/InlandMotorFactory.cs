@@ -11,9 +11,9 @@ namespace LernQuiz.Db
 {
     public class InlandMotorFactory : IEstablishQuestionnaires
     {
-        string ConnectionString = "server=sql11.freesqldatabase.com;user id=sql11176858;Password=5wZN8jCfgR;database=sql11176858";
+        string connectionString = "server=sql11.freesqldatabase.com;user id=sql11176858;Password=5wZN8jCfgR;database=sql11176858";
 
-        //string ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Binnen.mdf;Integrated Security=True";
+        //string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Binnen.mdf;Integrated Security=True";
         public InlandMotorFactory()
         {
         }
@@ -80,7 +80,7 @@ namespace LernQuiz.Db
         private IDbCommand query(String sqlCommand)
         {
             IDbConnection dbcon;
-            dbcon = new MySqlConnection(ConnectionString);
+            dbcon = new MySqlConnection(connectionString);
             dbcon.Open();
 
             IDbCommand dbcmd = dbcon.CreateCommand();

@@ -12,7 +12,7 @@ namespace LernQuiz
 		public Settings () : base ("config.txt")
 		{
 			if (!LoadFromFile ()) {
-				Console.WriteLine ("Config not read " + FileName);
+				Console.WriteLine ("Config not read " + fileName);
 				SetDefaultSettings ();
 			}
 		}
@@ -29,7 +29,7 @@ namespace LernQuiz
 			if (dictionary.ContainsKey (key)) {
 				return dictionary [key];
 			} else {
-				new LogErrorsInFile ().LogWarning ("Key: \"" + key + "\" not found in " + FileName);
+				new LogErrorsInFile ().LogWarning ("Key: \"" + key + "\" not found in " + fileName);
 				return "";
 			}
 		}

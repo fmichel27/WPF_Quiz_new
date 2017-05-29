@@ -38,13 +38,13 @@ namespace LernQuiz.View.Panels
 			Label FormLabel = FormElementFactory.CreateLabel (questionnaireModel.GetProgramLabel(), 18, 1000, 30, 10, 10);
 			elements.Add (FormLabel);
 
-			Label QuestionnaireLabel = FormElementFactory.CreateLabel (questionnaireModel.getQuestionnaireLabel(), 15, 800, 30, 10, 80);
+			Label QuestionnaireLabel = FormElementFactory.CreateLabel (questionnaireModel.GetQuestionnaireLabel(), 15, 800, 30, 10, 80);
 			elements.Add (QuestionnaireLabel);
 
-			FrageBogen = CreateFragebogenFrage(790,300,10,125, questionnaireModel.getQuestions()[0]);
+			FrageBogen = CreateFragebogenFrage(790,300,10,125, questionnaireModel.GetQuestions()[0]);
 			elements.Add(FrageBogen);
 
-			Button BackButton = FormElementFactory.CreateButton (questionnaireModel.Back, 150, 50, 0, 430);
+			Button BackButton = FormElementFactory.CreateButton (questionnaireModel.back, 150, 50, 0, 430);
 			BackButton.Click += (s, e) => {
 				GoBack ();
 			};
@@ -53,7 +53,7 @@ namespace LernQuiz.View.Panels
 			Progress = FormElementFactory.CreateProgressBar (0, 490, 30, 155, 440);
 			elements.Add (Progress);
 
-			ForwardButton = FormElementFactory.CreateButton (questionnaireModel.Forward, 150, 50, 650, 430);
+			ForwardButton = FormElementFactory.CreateButton (questionnaireModel.forward, 150, 50, 650, 430);
 			ForwardButton.Click += (s, e) => {
 				GoForward ();
 			};
@@ -73,7 +73,7 @@ namespace LernQuiz.View.Panels
 			FrageBogenFrage.Location = new Point (X, Y);
 			FrageBogenFrage.BackColor = Color.White;
 
-			Label FrageLabel = FormElementFactory.CreateLabel(question.QuestionText,12, 650,50,20,20);
+			Label FrageLabel = FormElementFactory.CreateLabel(question.questionText,12, 650,50,20,20);
 			Elements.Add (FrageLabel);
 
 			Antwort1 = FormElementFactory.CreateCheckBox (80, 100, false);
@@ -105,23 +105,23 @@ namespace LernQuiz.View.Panels
 				SaveAnswer(4);
 			};
 
-			Label Antwort1Label = FormElementFactory.CreateLabel (question.Answers [0].AnswerText, 10, 400, 30, 120, 100);
+			Label Antwort1Label = FormElementFactory.CreateLabel (question.answers [0].answerText, 10, 400, 30, 120, 100);
 			Elements.Add (Antwort1Label);
 
-			Label Antwort2Label = FormElementFactory.CreateLabel (question.Answers [1].AnswerText, 10, 400, 30, 120, 140);
+			Label Antwort2Label = FormElementFactory.CreateLabel (question.answers [1].answerText, 10, 400, 30, 120, 140);
 			Elements.Add (Antwort2Label);
 
-			Label Antwort3Label = FormElementFactory.CreateLabel (question.Answers [2].AnswerText, 10, 400, 30, 120, 180);
+			Label Antwort3Label = FormElementFactory.CreateLabel (question.answers [2].answerText, 10, 400, 30, 120, 180);
 			Elements.Add (Antwort3Label);
 
-			Label Antwort4Label = FormElementFactory.CreateLabel (question.Answers [3].AnswerText, 10, 400, 30, 120, 220);
+			Label Antwort4Label = FormElementFactory.CreateLabel (question.answers [3].answerText, 10, 400, 30, 120, 220);
 			Elements.Add (Antwort4Label);
 
 			try {
-			PictureBox p = FormElementFactory.CreatePictureBox (question.Picture, 110, 110, 580, 120);
+			PictureBox p = FormElementFactory.CreatePictureBox (question.picture, 110, 110, 580, 120);
 			Elements.Add (p);
 			} catch (Exception e) {
-				// Picture not found
+				// picture not found
 			}
 			
 			FrageBogenFrage.Controls.AddRange (Elements.ToArray());
@@ -134,7 +134,7 @@ namespace LernQuiz.View.Panels
 				questionIndex--;
 				Progress.Value = (int)(100f / 30f * (float)questionIndex);
 				Controls.Remove (FrageBogen);
-				FrageBogen = CreateFragebogenFrage(790,300,10,125,((QuestionnaireModel) QController.GetModel()).getQuestions()[questionIndex]);
+				FrageBogen = CreateFragebogenFrage(790,300,10,125,((QuestionnaireModel) QController.GetModel()).GetQuestions()[questionIndex]);
 				Controls.Add (FrageBogen);
 
 				UpdateButtonSelection ();
@@ -147,14 +147,14 @@ namespace LernQuiz.View.Panels
 				Progress.Value = (int)(100f / 30f * (float)questionIndex) ;
 
 				Controls.Remove (FrageBogen);
-				FrageBogen = CreateFragebogenFrage (790,300,10,125, ((QuestionnaireModel)QController.GetModel ()).getQuestions () [questionIndex]);
+				FrageBogen = CreateFragebogenFrage (790,300,10,125, ((QuestionnaireModel)QController.GetModel ()).GetQuestions () [questionIndex]);
 				Controls.Add (FrageBogen);
 
 				UpdateButtonSelection ();
 
 			} else if ((Antwort1.Checked || Antwort2.Checked || Antwort3.Checked || Antwort4.Checked)) {
 				ForwardButton.Enabled = false;
-				QController.SetPanel ("evaluation", EvaluationParams);
+				QController.setPanel ("evaluation", EvaluationParams);
 			}
 		}
 

@@ -36,8 +36,8 @@ namespace LernQuiz
 		}
 
 		public void delete() {
-			if (File.Exists(FileName)) {
-				File.Delete(FileName);
+			if (File.Exists(fileName)) {
+				File.Delete(fileName);
 			}
 		}
 	}

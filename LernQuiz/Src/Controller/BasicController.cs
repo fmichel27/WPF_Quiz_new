@@ -8,24 +8,24 @@ namespace LernQuiz.Controller
 {
 	public abstract class BasicController
 	{
-		protected BasicModel BModel;
+		protected BasicModel bModel;
 
 		// delegate callback, changes the visable panel
-		public delegate void SetNextPanel(String PanelName, String[] Params);
-		public SetNextPanel SetPanel;
+		public delegate void SetNextPanel(String panelName, String[] parames);
+		public SetNextPanel setPanel;
 
-		public BasicController (QuizForm QForm, String[] Params)
+		public BasicController (QuizForm qForm, String[] parames)
 		{
-			InitModel (Params);
-			// delegate to QForm.UpdatePanel()
-			SetPanel = new SetNextPanel (QForm.updatePanel);
+			InitModel (parames);
+			// delegate to qForm.UpdatePanel()
+			setPanel = new SetNextPanel (qForm.updatePanel);
 		}
 
 		public BasicModel GetModel() {
-			return BModel;
+			return bModel;
 		}
 
-		protected abstract void InitModel(String[] Params);
+		protected abstract void InitModel(String[] parames);
 	}
 }
 
